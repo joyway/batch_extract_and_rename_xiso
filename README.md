@@ -25,3 +25,6 @@ Run the script in terminal: `python3 extract_xiso_batch.py`
 
 ## How does it work
 Very simple! It calculates the checksum of the ISOs then get the folder name from `RepackList.json` and `AltRepackList.json`, after that, it uses `extract-xiso.exe` to extract the iso.
+
+## Known Issues:
+- Some games may contain files with long filename that exceeds the limit of FATX filesystem(42 characters). In that case, just use Repackinator to create the hdd-ready version game...
